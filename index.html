@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Clone</title>
+
+  <link rel="icon" type="image/x-icon" href="icons/bebe-fav.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- -------------- Stylesheets -------------- -->
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+</head>
+
+<body>
+<!-- -------------- Header -------------- -->
+<header class="header">
+  <div class="left-section">
+    <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+    <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+  </div>
+
+  <div class="middle-section">
+    <input class="search-bar" type="text" name="search-box" id="search" placeholder="Search">
+    <button class="search-button">
+      <img class="search-icon" src="icons/search.svg" alt="">
+    <div class="tooltip">Search</div>
+    </button>
+
+    <!--Put Position absolute inside position relative-->
+
+    <button class="voice-search-button">
+      <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+      <div class="tooltip">Search with your voice</div>
+    </button>
+  </div>
+
+  <div class="right-section">
+    <div class="upload-icon-container">
+      <img class="upload-icon" src="icons/upload.svg" alt="">
+      <div class="tooltip">Create</div>
+    </div>
+
+    <div class="youtube-apps-container">
+      <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+      <div class="tooltip">YouTube apps</div>
+    </div>
+
+
+    <div class="notifications-icon-container">
+      <img class="notifications-icon" src="icons/notifications.svg" alt="">
+      <div class="notification-count">3</div>
+      <div class="tooltip">Notifications</div>
+    </div>
+
+    <img class="current-user-picture" src="channel-pictures/pfp.jpeg" alt="">
+  </div>
+</header>
+<!-- -------------- End Header -------------- -->
+
+
+<!-- -------------- Sidebar -------------- -->
+
+<nav class="sidebar">
+  <div class="sidebar-link">
+    <img src="icons/home.svg" alt="">
+    <div >Home</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/explore.svg" alt="">
+    <div >Explore</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/subscriptions.svg" alt="">
+    <div >Subscriptions</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/originals.svg" alt="">
+    <div >Originals</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/youtube-music.svg" alt="">
+    <div >Youtube Music</div>
+  </div>
+  <div class="sidebar-link">
+    <img src="icons/library.svg" alt="">
+    <div >Library</div>
+  </div>
+</nav>
+<!-- -------------- End Sidebar -------------- -->
+
+<!--Main-->
+<main>
+  <section class="video-grid">
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=PjuDnCP5sdM">
+          <img class="thumbnail" src="thumbnails/among-us.png" alt="">
+        </a>
+        <div class="video-time">40:04</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@MoreSidemen">
+            <img class="profile-picture" src="channel-pictures/more-sidemen.jpg" alt="">
+          </a>
+          <div class="tooltip">MoreSidemen</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=PjuDnCP5sdM">
+            <p class="video-title">SIDEMEN AMONG US BUT THE IMPOSTER CAN USE AI</p>
+          </a>
+
+          <a href="https://www.youtube.com/@MoreSidemen">
+            <div class="video-author-container">
+              <p class="video-author">MoreSidemen</p> <div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">5.6M views &#183; 2 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=yYq3jffUj4g">
+          <img class="thumbnail" src="thumbnails/niko.png" alt="">
+        </a>
+        <div class="video-time">12:33</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@NDL">
+            <img class="profile-picture" src="channel-pictures/NDL.jpg" alt="">
+          </a>
+          <div class="tooltip">NDL</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=yYq3jffUj4g">
+            <p class="video-title">Saying Yes To Everything For 24 Hours: Australia Edition</p>
+          </a>
+
+          <a href="https://www.youtube.com/@NDL">
+            <div class="video-author-container">
+              <p class="video-author">NDL</p> <div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">112K views &#183; 2 hours ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=--vA-5FcvrU">
+          <img class="thumbnail" src="thumbnails/gib-vs-jarvis.png" alt="">
+        </a>
+        <div class="video-time">30:28</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@DAZNBoxing">
+            <img class="profile-picture" src="channel-pictures/dazn.jpg" alt="">
+          </a>
+          <div class="tooltip">DAZN Boxing</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=--vA-5FcvrU">
+            <p class="video-title">FULL FIGHT | AnEsonGib vs. Jarvis (Kingpyn Semi-Finals)</p>
+          </a>
+
+          <a href="https://www.youtube.com/@DAZNBoxing">
+            <div class="video-author-container">
+              <p class="video-author">DAZN Boxing</p> <div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">233k views &#183; 2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=mr4AVNZwdK0&t=28s">
+          <img class="thumbnail" src="thumbnails/relaxing-music.png" alt="">
+        </a>
+        <div class="video-time">2:17:50</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@TheSoulofWindLabel">
+            <img class="profile-picture" src="channel-pictures/soul-of-wind.jpg" alt="">
+          </a>
+          <div class="tooltip">The Soul of Wind</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=mr4AVNZwdK0&t=28s">
+            <p class="video-title">Peaceful Piano Music, Anxiety and Depressive States, Mind Relaxing BGM</p>
+          </a>
+
+          <a href="https://www.youtube.com/@TheSoulofWindLabel">
+            <div class="video-author-container">
+              <p class="video-author">The Soul of Wind</p> <div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">14K views &#183; 3 days ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=nCvxd-2FP1s">
+          <img class="thumbnail" src="thumbnails/ksi-tommy.png" alt="">
+        </a>
+        <div class="video-time">9:25</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@TheWADEConcept">
+            <img class="profile-picture" src="channel-pictures/wade.jpg" alt="">
+          </a>
+          <div class="tooltip">The W.A.D.E Concept</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=nCvxd-2FP1s">
+            <p class="video-title">Why The KSI VS TOMMY FURY Fight May Be The ENDGAME For Influencer Boxing</p>
+          </a>
+
+          <a href="https://www.youtube.com/@TheWADEConcept">
+            <div class="video-author-container">
+              <p class="video-author">The W.A.D.E Concept</p><div>&#10003;</div>
+            </div>
+          </a>
+          
+          <p class="video-stats">14k views &#183; 43 minutes ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=3mQponqdEoA">
+          <img class="thumbnail" src="thumbnails/best-chico-moments.png" alt="">
+        </a>
+        <div class="video-time">15:04</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@WildNOut">
+            <img class="profile-picture" src="channel-pictures/wild-n-out.jpg" alt="">
+          </a>
+          <div class="tooltip">Wild 'N Out</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=3mQponqdEoA">
+            <p class="video-title">Chico Bean’s Funniest Pick Up & Kill It Flows  🎤 Wild 'N Out</p>
+          </a>
+
+          <a href="https://www.youtube.com/@WildNOut">
+            <div class="video-author-container">
+              <p class="video-author">Wild 'N Out</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">18K views &#183; 2 hours ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=el_PChGfJN8">
+          <img class="thumbnail" src="thumbnails/murder-family.webp" alt="">
+        </a>
+        <div class="video-time">13:42</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@SpindleHorse">
+            <img class="profile-picture" src="channel-pictures/vivziepop.jpg" alt="">
+          </a>
+          <div class="tooltip">Vivziepop</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=el_PChGfJN8">
+            <p class="video-title">HELLUVA BOSS - Murder Family // S1: Episode 1</p>
+          </a>
+
+          <a href="https://www.youtube.com/@SpindleHorse">
+            <div class="video-author-container">
+              <p class="video-author">Vivziepop</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">57M views &#183; 2 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=J8CeB_w-Jaw">
+          <img class="thumbnail" src="thumbnails/ladybug-movie-review.webp" alt="">
+        </a>
+        <div class="video-time">19:20</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@AlexMeyersVids">
+            <img class="profile-picture" src="channel-pictures/alex-meyers.jpg" alt="">
+          </a>
+          <div class="tooltip">Alex Meyers</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=J8CeB_w-Jaw">
+            <p class="video-title">the new Miraculous Ladybug movie is hilariously dumb</p>
+          </a>
+
+          <a href="https://www.youtube.com/@AlexMeyersVids">
+            <div class="video-author-container">
+              <p class="video-author">Alex Meyers</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">38K views &#183; 1 hour ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=iuk77TjvfmE">
+          <img class="thumbnail" src="thumbnails/the-marvels.webp" alt="">
+        </a>
+        <div class="video-time">1:57</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@marvel">
+            <img class="profile-picture" src="channel-pictures/marvel.jpg" alt="">
+          </a>
+          <div class="tooltip">Marvel Entertainment</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=iuk77TjvfmE">
+            <p class="video-title">Marvel Studios’ The Marvels | Teaser Trailer</p>
+          </a>
+
+          <a href="https://www.youtube.com/@marvel">
+            <div class="video-author-container">
+              <p class="video-author">Marvel Entertainment</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">20M views &#183; 3 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=h28xpNvW9Yw">
+          <img class="thumbnail" src="thumbnails/adventure-time.webp" alt="">
+        </a>
+        <div class="video-time">2:06</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@cartoonnetwork">
+            <img class="profile-picture" src="channel-pictures/cartoon-network.jpg" alt="">
+          </a>
+          <div class="tooltip">Cartoon Network</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=h28xpNvW9Yw">
+            <p class="video-title">I'm Just Your Problem | Adventure Time | Cartoon Network</p>
+          </a>
+
+          <a href="https://www.youtube.com/@cartoonnetwork">
+            <div class="video-author-container">
+              <p class="video-author">Cartoon Network</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">6.9M views &#183; 6 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=ZEQ-zlni4hc">
+          <img class="thumbnail" src="thumbnails/steven-universe-piano-covers.webp" alt="">
+        </a>
+        <div class="video-time">31:45</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@JonPumper">
+            <img class="profile-picture" src="channel-pictures/piano-man.jpg" alt="">
+          </a>
+          <div class="tooltip">Jon Pumper</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=ZEQ-zlni4hc">
+            <p class="video-title">30 Minutes of Relaxing Steven Universe Songs | Piano Covers</p>
+          </a>
+
+          <a href="https://www.youtube.com/@JonPumper">
+            <div class="video-author-container">
+              <p class="video-author">Jon Pumper</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">3.1M views &#183; 2 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO BOX ===== -->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=2UviyIdwb6A">
+          <img class="thumbnail" src="thumbnails/cringey-camp-rock.webp" alt="">
+        </a>
+        <div class="video-time">7:05</div>
+      </div>
+
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/@quillax2174">
+            <img class="profile-picture" src="channel-pictures/quillax.jpg" alt="">
+          </a>
+          <div class="tooltip">quillax</div>
+        </div>
+
+        <div class="video-info">
+          <a href="https://www.youtube.com/watch?v=2UviyIdwb6A">
+            <p class="video-title">camp rock being cringey for 7 minutes</p>
+          </a>
+
+          <a href="https://www.youtube.com/@quillax2174">
+            <div class="video-author-container">
+              <p class="video-author">quillax</p><div>&#10003;</div>
+            </div>
+          </a>
+
+          <p class="video-stats">3.9M views &#183; 2 years ago</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--End Main-->
+
+</body>
+</html>
